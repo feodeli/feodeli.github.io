@@ -1,0 +1,6 @@
+site:
+  title: Fernanda Odeli - Personal Trainer
+  description: Treinos personalizado e exclusivo para você. Atendimento presencial e domicílio na região de Jaraguá do Sul e online para todo o Brasil. Treinamento funcional, emagrecimento, hipertrofia, reabilitação, gestantes, idosos e crianças.
+  base_url: https://feodeli.com.br
+posts:
+  rss: rss.xml

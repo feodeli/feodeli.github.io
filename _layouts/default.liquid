@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    {% include "head.liquid" %}
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 class="logo-icon">
+          {{ site.title }}
+        </h1>
+        <p>
+          {{ site.description }}
+        </p>
+      </header>
+      {{ page.content }}
+    </div>
+  </body>
+</html>

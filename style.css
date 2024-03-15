@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&family=Source+Code+Pro&display=swap');
+
+:root {
+  --light-main-bg-color: #6C8776;
+  --light-main-text-color: #ffffff;
+  --light-link-color: #f5f5f5;
+
+  --light-links-bg-color: #f5f5f5;
+}
+
+
+body {
+  font-family: Montserrat;
+  max-width: 60rem;
+  margin: auto;
+  padding: 15px;
+}
+
+html {
+  background-color: var(--light-main-bg-color);
+  color: var(--light-main-text-color);
+  font-family: 'Cardo', serif;
+  font-size: 1.2rem;
+}
+
+a {
+  font-family: 'Cardo', serif;
+  color: var(--light-link-color);
+  text-decoration: none;
+}
+
+p {
+  text-align: justify;
+  word-break: break-word;
+}
+
+img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+h1.logo-icon {
+  text-align: center;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  background: #fff;
+  /* Move text outside of visibilit */
+  text-indent: -9999px;
+  /* Center the text */
+  line-height: 200px;
+  font-size: 0;
+  margin: 0 auto;
+  margin-bottom: 2em;
+}
+
+h1.logo-icon::before {
+  content: ' ';
+  display: block;
+  width: 170px;
+  height: 170px;
+  background: url('/assets/feodeli-icon.png') no-repeat center 20px;
+  background-size: contain;
+  margin: 0 auto;
+}
+
+header p {
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  font-size: 1.2em;
+}
+
+.links ul {
+  list-style-type: none;
+  padding: 0;
+  display: block;
+}
+.links ul li {
+  margin-bottom: 25px;
+  display: block;
+  width: 100%;
+}
+.links ul li a {
+  display: block;
+  padding: 25px;
+  text-align: center;
+  background-color: var(--light-links-bg-color);
+  color: var(--light-main-bg-color);
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+.links ul li a:hover {
+  opacity: 0.7;
+}
