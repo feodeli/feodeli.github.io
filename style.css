@@ -23,6 +23,10 @@ html {
   font-size: 1.2rem;
 }
 
+header {
+  animation: fade-in-up 1s ease backwards;
+}
+
 a {
   font-family: 'Cardo', serif;
   color: var(--light-link-color);
@@ -77,11 +81,48 @@ header p {
   padding: 0;
   display: block;
 }
+
 .links ul li {
   margin-bottom: 25px;
   display: block;
   width: 100%;
+
+  animation: fade-in-up 1s ease backwards;
 }
+
+/* delay each li item */
+.links ul li:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.links ul li:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.links ul li:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.links ul li:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.links ul li:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+.links ul li:nth-child(6) {
+  animation-delay: 0.6s;
+}
+
+.links ul li:nth-child(7) {
+  animation-delay: 0.7s;
+}
+
+.links ul li:nth-child(8) {
+  animation-delay: 0.8s;
+}
+
 .links ul li a {
   display: block;
   padding: 25px;
@@ -93,6 +134,19 @@ header p {
   font-size: 1.2em;
   font-weight: 700;
 }
+
 .links ul li a:hover {
   opacity: 0.7;
+}
+
+@keyframes fade-in-up {
+  0% {
+    transform: translate(0px, 100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(0px, 0);
+    opacity: 1;
+  }
 }

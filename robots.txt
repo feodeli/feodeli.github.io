@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://feodeli.com.br/sitemap.xml.gz
